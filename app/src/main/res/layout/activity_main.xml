@@ -10,7 +10,7 @@
     <TextView
         android:id="@+id/title"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="95dp"
         android:background="@color/blue_tint"
         android:text="Grade Calculator"
         android:gravity="center"
@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/gif_a"
+        android:id="@+id/gif"
         android:layout_width="226dp"
         android:layout_height="203dp"
         android:layout_marginTop="52dp"
@@ -33,24 +33,28 @@
 
     <TextView
         android:id="@+id/display_grade"
-        android:layout_width="93dp"
-        android:layout_height="101dp"
-        android:text="-"
+        android:layout_width="110dp"
+        android:layout_height="106dp"
+        android:text="--"
         android:textAlignment="center"
-        android:textSize="80dp"
+        android:textSize="90dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gif_a"
+        app:layout_constraintTop_toBottomOf="@+id/gif"
         app:layout_constraintVertical_bias="0.136" />
 
     <EditText
-        android:id="@+id/get_grade"
+        android:id="@+id/get_mark"
         android:layout_width="235dp"
         android:layout_height="59dp"
         android:ems="10"
         android:inputType="number"
         android:hint="Enter Your Marks"
+        android:textColor="@color/black"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,6 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="76dp"
         android:text="Get Grade"
+        android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
